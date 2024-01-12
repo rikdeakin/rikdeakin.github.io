@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,900&display=swap");
+
+* {
+  font-family: raleway, sans-serif;
+  color: antiquewhite;
+}
+body {
+  background-color: rgb(0, 0, 0);
+}
+header {
+  position: sticky;
+  top: 0;
+  text-align: left;
+  padding: 20px;
+  background-color: rgb(247, 0, 255);
+}
+main {
+  padding: 5em;
+}
+footer {
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  width: 99%;
+}
+
+#flex-container {
+  display: grid;
+  grid-template-columns: [first] 300px [gapstart] 10px [gapend] auto [end];
+  grid-template-rows: [row1-start] auto [row1-end] 10px [row2-start] 20% [row2-end];
+}
+#grid-img {
+  /* border-radius: 20% 0 0 20%; */
+    grid-column-start: 1;
+  grid-column-end: span col4-start;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
+.card {
+  margin-left: 2em;
+  border-radius: 0 20% 20% 0;
+  background: #16302f;
+  /* opacity: 1;
+  background-image: url("data:image/svg+xml,%3C!-- svg: first layer --%3E%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"); */
+}
+
+li {
+  color: beige;
+}
+
+a,
+p,
+li {
+  font-family: raleway, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+blockquote {
+  font-family: raleway, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+h1 {
+  font-weight: 700;
+  font-style: italic;
+}
+h2 {
+  font-family: raleway, sans-serif;
+}
